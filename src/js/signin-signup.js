@@ -7,17 +7,20 @@ const signInButton2 = document.getElementById('signIn2');
 
 signUpButton.addEventListener('click', () => {
 	container.classList.add("right-panel-active");
+	// document.getElementById('container2').classList.add("right-panel-active");
 });
 
 signInButton.addEventListener('click', () => {
 	container.classList.remove("right-panel-active");
+	// document.getElementById('container2').classList.remove("right-panel-active");
 });
 
-function myFunction() {
+signUpButton2.addEventListener('click', () => {
 	console.log('Yes1');
-    container2.classList.add("right-panel-active");
-}
-function myFunction2() {
-	console.log('Yes2');
-    container2.classList.remove("right-panel-active");
-}
+	container2.classList.add("right-panel-active");
+});
+
+signInButton2.addEventListener('click', () => {
+	console.log('Yes1');
+	container2.classList.remove("right-panel-active");
+});
