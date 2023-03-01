@@ -1,7 +1,7 @@
 body{
     padding: 1%;
     margin: 1% 1%;
-    background-color:azure;
+    background-color:#DBE2EF;
 }
 
 .flex-container {
@@ -19,8 +19,8 @@ body{
  }
  
  .navbar-brand{
-    font-family: 'Ubuntu', sans-serif;
-    font-weight: bold;
+   font-family: 'Livvic', sans-serif;
+   font-weight: 700;
     font-size: 2.5rem;
  }
  
@@ -39,6 +39,7 @@ body{
 
 
 .cover-photo{
+   
     object-fit: cover;
     text-align: center;
     margin: 0 1%;
@@ -47,7 +48,8 @@ body{
 }
 
  .cover-photo img{
-    object-fit: cover;
+   background-color: #727171;
+    object-fit:cover;
     width: 90%;
     height: 50vh;
     overflow: hidden;
@@ -86,6 +88,7 @@ body{
  }
 
  .profile-photo img{
+   background-color: #727171;
     position: relative;
     /* display: flex; */
     top: -50%;
@@ -133,6 +136,13 @@ body{
     font-weight: 500;
     font-size: 1.4rem;
  }
+ .profile-details h5 a{
+   text-decoration: none;
+   color: #000
+ }
+ .profile-details h5 a:hover{
+   text-decoration: underline;
+ }
 
  .profile-name,.followers-posts{
     
@@ -162,21 +172,28 @@ body{
  }
 
   .hover-img {
+   /* height:40vw; 
+    width: 40vw; */
     background-color: #000;
     color: #fff;
     display: inline-block;
     /* margin: 1px; */
     /* max-width: 320px;
     min-width: 100px; */
+    
     overflow: hidden;
     position: relative;
     text-align: center;
+    align-items: center;
     width: 100%;
     padding: 0%;
   }
   
   .hover-img * {
+   object-fit: cover;
     box-sizing: border-box;
+    align-items: center;
+    vertical-align: middle;
     transition: all 0.45s ease;
     padding: 0%;
   }
@@ -198,8 +215,10 @@ body{
   
   .hover-img img {
     vertical-align: middle;
-    max-width: 100%;
-    backface-visibility: hidden;
+   
+    /* max-width: 100%; */
+    object-fit:cover;
+    /* backface-visibility: hidden; */
   }
   
   .hover-img figcaption {
@@ -237,6 +256,13 @@ body{
   .hover-img:hover figcaption {
     opacity: 1;
   }
+
+  img.disable-hover {
+   opacity: 1;
+ }
+   figcaption.disable-hover {
+   opacity: 0;
+ }
 
   figcaption h5{
     user-select: none;
