@@ -12,6 +12,19 @@
 
     </head>
     <body>
+      <div class="spinner-wrapper">
+        <div class="sk-cube-grid">
+          <div class="sk-cube sk-cube1"></div>
+          <div class="sk-cube sk-cube2"></div>
+          <div class="sk-cube sk-cube3"></div>
+          <div class="sk-cube sk-cube4"></div>
+          <div class="sk-cube sk-cube5"></div>
+          <div class="sk-cube sk-cube6"></div>
+          <div class="sk-cube sk-cube7"></div>
+          <div class="sk-cube sk-cube8"></div>
+          <div class="sk-cube sk-cube9"></div>
+        </div>
+      </div>
 
         <nav class="navbar navbar-expand-lg navbar-light">
 			<div class="container-fluid">
@@ -225,6 +238,20 @@
 
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
         <script src="https://kit.fontawesome.com/5e315e4af1.js" crossorigin="anonymous"></script>
+        <script src="https://code.jquery.com/jquery-3.6.3.js" integrity="sha256-nQLuAZGRRcILA+6dMBOvcRh5Pe310sBpanc6+QBmyVM=" crossorigin="anonymous"></script>
         <script src="./js/homepage.js"></script>
+
+        <script>
+          $(document).ready(function() {
+          //Preloader
+          preloaderFadeOutTime = 500;
+          function hidePreloader() {
+          var preloader = $('.spinner-wrapper');
+          preloader.fadeOut(preloaderFadeOutTime);
+          }
+          hidePreloader();
+          });
+          </script>
+        
     </body>
 </html>
