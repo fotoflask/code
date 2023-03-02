@@ -3,7 +3,45 @@ body{
     padding: 2%;
 }
 
+@media (width<991px){
+  .media-section > .new-panel{
+    display: none;
+    visibility: hidden;
+  }  
+}
+
 /* NAVBAR */
+
+@media (width>991px){
+  #navbarSupportedContent2  {
+    visibility: hidden;
+    display: none;
+  }
+}
+
+#navbarSupportedContent2 .collapse:not(.show){
+  
+  visibility: hidden;
+}
+
+#navbarSupportedContent2 .collapse .show {
+  
+  visibility: visible;
+}
+
+.button-container{
+  width: 100px;
+  display: flex;
+  flex-wrap: inherit;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.button-container button{
+  margin: 0 1px 0 1px;
+  padding: 1%;
+}
+
 
 .navbar{
     background-color: #DBE2EF;
