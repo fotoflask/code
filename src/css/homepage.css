@@ -3,11 +3,44 @@ body{
     padding: 2%;
 }
 
-@media (width<991px){
+@media screen and (width< 500px){
   .media-section > .new-panel{
     display: none;
     visibility: hidden;
   }  
+
+  .square-grid{
+    width: 50vw;
+    height: 50vw;
+    position: relative;
+    top: 65%;
+    left: 59%;
+  }
+}
+
+@media screen and (width>=991px) {
+  .square-grid {
+    width: 10vw;
+    height: 10vw;
+    position: relative;
+    top: 67%;
+    left: 70%;
+  }
+}
+
+@media screen and (min-width: 500px) and (max-width: 990px) {
+  .media-section > .new-panel{
+    display: none;
+    visibility: hidden;
+  }  
+
+  .square-grid{
+    width: 20vw;
+    height: 20vw;
+    position: relative;
+    top: 65%;
+    left: 68%;
+  }
 }
 
 
@@ -23,21 +56,14 @@ body{
   z-index: 999999;
   }
 
-.square-grid {
-  width: 10vw;
-  height: 10vw;
-  position: absolute;
-  top: 65%;
-  left: 70%;
-}
-
 .square-grid .square {
   width: 7.142857%;
   height: 7.142857%;
   background-color: #112D4E;
+  border: 1px solid #112D4E;
   float: left;
-  -webkit-animation: sk-cubeGridScaleDelay 0.5s infinite ease-in-out;
-          animation: sk-cubeGridScaleDelay 2s infinite ease-in-out; 
+  -webkit-animation: sk-cubeGridScaleDelay 1s infinite ease-in-out;
+          animation: sk-cubeGridScaleDelay 3s infinite ease-in-out; 
 }
 
 .square-grid .transparent{
