@@ -1,9 +1,6 @@
 const signUpButton = document.getElementById('signUp');
 const signInButton = document.getElementById('signIn');
 const container = document.getElementById('container');
-const container2 = document.getElementById('container2');
-const signUpButton2 = document.getElementById('signUp2');
-const signInButton2 = document.getElementById('signIn2');
 
 signUpButton.addEventListener('click', () => {
 	container.classList.add("right-panel-active");
@@ -15,12 +12,12 @@ signInButton.addEventListener('click', () => {
 	// document.getElementById('container2').classList.remove("right-panel-active");
 });
 
-signUpButton2.addEventListener('click', () => {
-	console.log('Yes1');
-	container2.classList.add("right-panel-active");
-});
 
-signInButton2.addEventListener('click', () => {
-	console.log('Yes1');
-	container2.classList.remove("right-panel-active");
-});
+function changeGradient(value) {
+	// console.log(1);
+	// console.log(window.getComputedStyle(document.body).getPropertyValue('--a'));
+	// console.log((window.getComputedStyle(document.body).getPropertyValue('--a')));
+	// parseInt(window.getComputedStyle(document.body).getPropertyValue('--a'))
+	document.body.style.setProperty('--a', value+180 + 'deg');
+  }
+  
