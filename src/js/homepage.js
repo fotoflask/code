@@ -25,3 +25,5 @@ function myFunction() {
 
 console.log(elem.style.display);
 
+
+
