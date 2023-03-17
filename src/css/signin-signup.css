@@ -393,8 +393,8 @@ nav{
 	visibility: hidden;
  }
 
-
- .carousel{
+.carousel{
+	max-width: 400px;
     width:100%;
     position:relative;
 }
@@ -404,6 +404,7 @@ nav{
 /*}*/
 
 #container2{
+	max-width: 400px;
 	background-color: white;
 }
 
@@ -435,9 +436,7 @@ svg text {
 	font-size: 8vw;
 	font-weight: 700;
 	stroke-width: 0.25vw;
-   
 	animation: textAnimate 6s infinite alternate;
-	
   }
 
   @media (max-width:700px) {

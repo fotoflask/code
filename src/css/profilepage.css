@@ -128,7 +128,7 @@ body{
     object-fit:cover;
     width: 90%;
     height: 50vh;
-    overflow: hidden;
+    overflow: hidden;    
     border-radius: 10px;
  }
 
